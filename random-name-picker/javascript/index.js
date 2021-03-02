@@ -1,33 +1,24 @@
-/* Buttons */
-let addButton = document.getElementById("add");
-let pickWinnerButton = document.getElementById("pick");
-let winnerContainer = document.getElementById("winner-container")
-let addedNames = document.getElementById("added-names")
-let winnerDisplay = document.getElementById("winner")
+let names = []
+let namesWrapper = document.getElementById("added-names")
+let button = document.getElementById("add-button")
 
-let nameArray = []
-
-
-
-
-function addName() {
-     let enterNameInput = document.getElementById("enter-names").value
-     nameArray.push(enterNameInput)
-     let child = document.createElement("p");
-     child.innerHTML += enterNameInput
-     addedNames.append(child);
+function renderArray() {
+     for (let i = 0; i < names.length; i++) {
+          let span = document.createElement("span")
+          span.textContent = names[i]
+          namesWrapper.append(span)
+     }
 }
-     addButton.addEventListener("click", addName)
+renderArray()
 
-
-
-function pickWinner() {
-     let newNumber = Math.floor(Math.random() * nameArray.length);
-     let winnerName = nameArray[newNumber]
-     winnerDisplay.innerHTML = winnerName
-
+function addNewName() {
+     let value = document.getElementById("enter-names").value
+     names.push(value)
+     value = ""
+     namesWrapper.innerHTML = ""
+     renderArray()
 }
+button.addEventListener("click", addNewName)
 
-pickWinnerButton.addEventListener("click", pickWinner)
 
 
