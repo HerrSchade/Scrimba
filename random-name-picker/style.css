@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
 	/* insert your colours here */
@@ -30,11 +30,121 @@ body {
 	background: #ece9e6; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #ffffff, #ece9e6); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #ffffff, #ece9e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: "Lato", sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	margin-bottom: 20rem;
 }
 
 h1 {
 	font-weight: 900;
 	text-align: center;
 	font-size: 5rem;
+}
+
+main {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.name-container {
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: center;
+}
+.name-container span {
+	font-size: 3rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin: 0 1rem;
+	background-color: rgb(241, 241, 241);
+	border-radius: 0.5rem;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.input-field-container {
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.input-field-container input {
+	padding: 1.3rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1.5rem;
+	box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+	min-width: 300px;
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+/* Buttons */
+.add-names-btn {
+	background-image: linear-gradient(to right, #76b852 0%, #8dc26f 51%, #76b852 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+}
+
+.add-names-btn:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.remove-names-btn {
+	background-image: linear-gradient(to right, #d31027 0%, #ea384d 51%, #d31027 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+}
+
+.remove-names-btn:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.pick-winner-btn {
+	background-image: linear-gradient(to right, #76b852 0%, #8dc26f 51%, #76b852 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	font-weight: bold;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	border: none;
+}
+
+.pick-winner-btn:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
 }
