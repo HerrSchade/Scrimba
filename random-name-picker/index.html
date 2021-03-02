@@ -4,27 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
 		<title>Random Name Picker</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
 			<h1>Random Name Picker</h1>
 		</header>
 		<main>
-			<div class="winner-container" id="winner-container">
-				<h2 id="winner"></h2>
-				<button id="pick">Pick a winner</button>
+			<div class="name-container"></div>
+			<input type="text" name="names" id="names" placeholder="enter names" />
+			<div class="button-wrapper">
+				<button id="add-names-btn">Add name</button>
+				<button id="remove-names-btn">Remove name</button>
+				<button id="pick-winner-btn">Pick a winner</button>
 			</div>
-			<div class="name-container">
-				<div class="added-names" id="added-names"></div>
-				<div class="entering-names">
-					<input type="text" id="enter-names" class="enter-names" placeholder="enter names" />
-					<button id="add-button">Add</button>
-					<button id="unshift-button">Add to beginning</button>
-				</div>
-			</div>
-			<script src="javascript/index.js"></script>
 		</main>
+		<script src="index.js"></script>
 	</body>
 </html>
