@@ -1,4 +1,4 @@
-let names = ["Katarzyna", "Robert"]
+let names = []
 
 function renderNames() {
 let nameContainer = document.getElementById("name-container")
