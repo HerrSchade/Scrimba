@@ -9,7 +9,7 @@ let count = 1
 function addEntryToDom(event) {
      event.preventDefault();
      let entryDiv = document.createElement("div");
-     entryDiv.classname = "single-entry";
+     entryDiv.className = "single-entry";
      entryDiv.textContent = entriesTextbox.value;
      entryDiv.style.display = "none";
      entriesSection.append(entryDiv);
@@ -21,6 +21,10 @@ function addEntryToDom(event) {
      entriesNav.append(displayEntryButton)
 
      displayEntryButton.addEventListener("click", function() {
+          let allEntries = document.querySelectorAll(".single-entry")
+          for (let i = 0; i < allEntries.length; i++) {
+               allEntries[i].style.display = "none"
+          }
           entryDiv.style.display = "block"
      })
 

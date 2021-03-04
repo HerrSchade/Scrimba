@@ -41,9 +41,9 @@ body {
 
 .entry-textbox {
 	background-color: #ffa62b;
-	width: 30rem;
+	width: 37rem;
 	height: 20rem;
-	padding: 1rem;
+	padding: 2rem;
 	border-radius: 2.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
@@ -55,7 +55,9 @@ body {
 	border: none;
 	border-radius: 0.5rem;
 	padding: 1rem 1.5rem;
-	margin-left: 60%;
+	margin-left: 80%;
+	background-color: rgb(94, 192, 91);
+	margin-bottom: 2rem;
 }
 
 #entries {
@@ -65,7 +67,19 @@ body {
 	border-radius: 2.5rem;
 	border: none;
 	padding: 2rem;
-	max-width: 30rem;
+	max-width: 37rem;
 	margin-top: 1rem;
 }
 
+.entries-nav {
+	padding-bottom: 1rem;
+}
+
+.display-entry-button {
+	margin: 0.3rem;
+	padding: 0.5rem;
+}
+
+.display-entry-button:hover {
+	cursor: pointer;
+}
