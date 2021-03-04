@@ -5,6 +5,7 @@ let nameContainer = document.getElementById("name-container")
 nameContainer.innerHTML = ""
      for(let i = 0; i < names.length; i++) {
           let newElement = document.createElement("span")
+          newElement.classList.add("nameShowHide")
           newElement.textContent = names[i]
           nameContainer.append(newElement)
      }
@@ -19,6 +20,7 @@ function addName() {
           names.push(inputField)
           inputField = ""
           renderNames()
+          showHidePickWinnerBtn()
           }
 }
 addNameBtn.addEventListener("click", addName)
@@ -30,6 +32,7 @@ function removeName() {
           names.pop(inputField)
           inputField = ""
           renderNames()
+          showHidePickWinnerBtn()
 }
 removeNameBtn.addEventListener("click", removeName)
 
@@ -45,3 +48,16 @@ function pickWinner() {
      winnerContainer.append(newElement)
 }
 pickWinnerBtn.addEventListener("click", pickWinner)
+
+function showHidePickWinnerBtn() {
+     let nameContainer = document.getElementsByClassName("nameShowHide")
+     let pickWinnerButton = document.getElementById("pick-winner-btn")
+          if (nameContainer.length > 0) {
+          pickWinnerButton.style.display = "block"
+     } else {
+          pickWinnerButton.style.display = "none"
+     }
+          
+}
+
+     

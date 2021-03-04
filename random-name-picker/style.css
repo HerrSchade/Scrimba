@@ -69,12 +69,13 @@ main {
 	margin-bottom: 4rem;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .name-container span {
 	font-size: 2rem;
 	font-weight: 600;
 	padding: 1rem;
-	margin: 0 1rem;
+	margin: 1rem 1rem;
 	background-color: rgb(241, 241, 241);
 	border-radius: 0.5rem;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -155,6 +156,7 @@ main {
 	box-shadow: 0 0 20px #eee;
 	border-radius: 10px;
 	border: none;
+	display: none;
 }
 
 .pick-winner-btn:hover {
