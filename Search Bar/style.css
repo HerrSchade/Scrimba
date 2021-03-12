@@ -1,0 +1,65 @@
+:root {
+	/* Insert your colours here */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	/* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.container {
+	background: #f2f2f2;
+	max-width: 700px;
+	margin: 50px auto;
+}
+
+.searchContainer {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	background-color: #c8d8e4;
+}
+
+.searchContainer label {
+	font-size: 2.5rem;
+	margin-right: 2rem;
+}
+
+.names {
+	padding: 1rem;
+}
+
+.name {
+	background: #2b6777;
+	color: white;
+	margin: 1rem 1rem;
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
+}
