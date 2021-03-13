@@ -63,7 +63,23 @@ button {
 }
 
 .modal {
+	max-width: 600px;
+	margin: 0 auto;
 	padding-top: 2rem;
-	background: red;
+	background: #f2f2f2;
+	position: relative;
+	top: 35%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.3);
+
 }
